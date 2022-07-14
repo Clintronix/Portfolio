@@ -40,12 +40,12 @@ export default function About() {
                     <article className="relative rounded-lg shadow-xl bg-white p-16">
                         <h1 className="cursive text-6xl flex align-center justify-center">{author.name}</h1>
                         <img 
-                            src={urlFor(author.image).url()}
+                            src={urlFor(author.image).width(200).url()}
                             alt={author.name}
                             className="rounded-full"
                         />
                         <div className="px-16 lg:px-48 py-12 lg:py-20 prose lg:prose-xl max-w-full">
-                        <BlockContent
+                        <BlockContent className=""
                         blocks={author.bio}
                         projectId="7qz818p3"
                         dataset="production"

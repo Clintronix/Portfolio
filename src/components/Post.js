@@ -29,7 +29,7 @@ export default function Post() {
             <main className="p-12">
                 <section className="container mx-auto">
                     <div></div>
-                    <h1 className="text-6xl cursive flex justify-center brdr">
+                    <h1 className="text-5xl cursive flex justify-center">
                         Recent research:
                     </h1>
                     <h2 className="text-lg text-gray-600 flex justify-center mb-12">
