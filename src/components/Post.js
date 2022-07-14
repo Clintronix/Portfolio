@@ -8,9 +8,10 @@ export default function Post() {
 
         useEffect(() => {
             sanityClient
-                .fetch(`*[_type == "post"]{
+                .fetch(`*[_type == "post"] | order(_createdAt desc){
                     title,
                     slug,
+                    publishedAt,
                     mainImage{
                         asset->{
                             _id,
@@ -27,15 +28,18 @@ export default function Post() {
         return (
             <main className="p-12">
                 <section className="container mx-auto">
-                    <h1 className="text-5xl cursive flex justify-center">
-                        Blog Posts
+                    <div></div>
+                    <h1 className="text-6xl cursive flex justify-center brdr">
+                        Recent research:
                     </h1>
                     <h2 className="text-lg text-gray-600 flex justify-center mb-12">
-                        You can find 
+                        Here's what I have been working on!
                     </h2>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 p-12">
                         {postData && postData.map((post, index) => (
-                        <article className="mr-10">
+                        <article className="mr-10 mb-16">
+
+                            <p>{new Date(post.publishedAt).toLocaleDateString()}</p>
                             <Link to={"/post/" + post.slug.current} key={post.slug.current}>
                                 <span className="block h-64 realtive rounded shadow leading-snug bg-white border-l-8 border-green-400 -z-1" key={index}>
                                     <img 
