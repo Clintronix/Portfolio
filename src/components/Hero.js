@@ -46,7 +46,7 @@ export default function Home() {
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat',
                 }}>
-                    <Tile className="h-96 w-96 flex items-center justify-center text-center">
+                    <Tile className="h-72 w-72 text-sm md:h-96 md:w-96 flex items-center justify-center text-center">
                         <h3 className="p-4">{hero.title}</h3>
                 <p className="p-8">{hero.description}</p>
                 <Link to="/projects"><Button className="">Projects</Button></Link>

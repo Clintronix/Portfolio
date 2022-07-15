@@ -10,9 +10,7 @@ export default function Home() {
                 <section className="flex items-center justify-center">
                     <Hero></Hero>
           </section>
-          <section>
               <Post></Post>
-          </section>
           </main>
             
         )

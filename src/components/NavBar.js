@@ -10,8 +10,8 @@ export default function NavBar() {
                     <NavLink 
                     to="/" 
                     exact  
-                    className="inflex-flex items-center py-6 px-3 mr-4 text-blue-100 hover:text-white text-4xl font-bold tracking-wide "
-                    activeClassName="text-black">
+                    className="md:inflex-flex items-center md:py-6 px-3 mr-4 text-blue-100 hover:text-white md:text-4xl font-bold tracking-wide "
+                    activeclassname="text-white">
                         Home
                     </NavLink>
                     <NavLink 

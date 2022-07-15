@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
 import SanityClient from "../Client.js"
+import { Tile } from 'carbon-components-react'
 
 export default function Projects() {
     const [projectData, setProjectData] = useState(null);
@@ -24,9 +25,9 @@ export default function Projects() {
             <section className="container mx-auto">
                 <h1 className="text-5xl flex justify-center cursive">Projects</h1>
                 <h2 className="text-lg text-gray-600 flex justify-center mb-12">Here you can find my recent projects</h2>
-                <section className="grid grid-cols-2 gap-8">
+                <section className="grid grid-cols-1 gap-8 md:grid-cols-2">
                     {projectData && projectData.map((project, index) => (
-                    <article className="relative rounded-lg shadow-xl bg-white p-16">
+                    <Tile className="relative rounded-lg shadow-xl bg-white p-16">
                         <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-red-700">
                             <a 
                             href={project.link}
@@ -60,7 +61,7 @@ export default function Projects() {
                                 </a>
                             </p>
                         </div>
-                    </article>
+                    </Tile>
                     ))}
                 </section>
             </section>
