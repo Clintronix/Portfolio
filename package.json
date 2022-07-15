@@ -6,6 +6,7 @@
     "@carbon/colors": "^11.3.0",
     "@carbon/ibm-security": "^1.47.0",
     "@carbon/icons-react": "^11.5.0",
+    "@carbon/react": "1.1.0",
     "@sanity/block-content-to-react": "^3.0.0",
     "@sanity/client": "^3.3.2",
     "@sanity/image-url": "^1.0.1",

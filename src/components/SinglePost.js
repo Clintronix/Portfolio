@@ -46,7 +46,7 @@ export default function SinglePost() {
                     <header className="h-full flex justify-center flex justify-center items-center">
                         <div className="bg-white bg-opacity-75 m-1 p-12">
                         <img 
-                            src={urlFor(singlePost.authorImage).url()}
+                            src={urlFor(singlePost.authorImage).width(200).url()}
                             alt={singlePost.name}
                             className="flex items-center-100 w-100 h-100 rounded-full"
                             />
@@ -68,11 +68,11 @@ export default function SinglePost() {
                     dataset="production"
                     />
                 </div>
-                <img 
+                <img
                         src={singlePost.mainImage.asset.url}
                         alt={singlePost.title}
-                        className="w-full h-full object-cover flex justify-center"
-                        style={{ height: "800px" }}
+                        className="w-full h-full object-cover"
+                        style={{ height: "auto", width: "800px"}}
                     />
             </article>
         </main>

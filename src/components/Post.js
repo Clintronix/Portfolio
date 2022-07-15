@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import sanityClient from "../Client.js"
+import { Button } from 'carbon-components-react'
 
 
 export default function Post() {
@@ -47,9 +48,9 @@ export default function Post() {
                                         alt={post.mainImage.alt}
                                         className="w-full h-full rounded-r object-cover"
                                     />
-                                    <span className="relative flex justify-end items-end pr-4 pb-4">
-                                        <h3 className="text-sm text-gray-800 px-3 py-4 bg-red-700 text-red-100 bg-opacity-75 rounded">{post.title}</h3>
-                                    </span>
+                                    <Button className="">
+                                        <h3 className="text-sm text-white ">{post.title}</h3>
+                                    </Button>
                                 </span>
                             </Link>
                         </article>

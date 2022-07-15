@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+//import React, { useEffect, useState } from "react" //Never used
 import Hero from './Hero'
 import Post from './Post'
 

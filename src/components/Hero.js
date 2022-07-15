@@ -37,7 +37,15 @@ export default function Home() {
         return (
             <>{heroData && heroData.map((hero, index) => (
                 <div className="hero flex items-center justify-center" 
-                style={{}}>
+                style={{
+                    backgroundImage: 
+                `url(` + urlFor(hero.mainImage).width(800).url() + `)`,
+                    height:'500px',
+                    width:'800px',
+                    fontSize:'50px',
+                    backgroundSize: 'cover',
+                    backgroundRepeat: 'no-repeat',
+                }}>
                     <Tile className="h-96 w-96 flex items-center justify-center text-center">
                         <h3 className="p-4">{hero.title}</h3>
                 <p className="p-8">{hero.description}</p>
